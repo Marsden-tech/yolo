@@ -14,4 +14,10 @@ Install the docker engine here:
 ![alt text](image-2.png)
 
 ## How to run the app
-Use docker compose up command
+docker pull lweroh/lweroh-yolo-client:v1.0.0
+docker pull lweroh/lweroh-yolo-backend:v1.0.0
+
+or 
+
+docker compose build
+docker compose up
