@@ -1,3 +1,4 @@
+#tasks specified in the roles folder
 ---
 - name: Ansible playbook to dockerize and run yolo e-commerce app using ansible
   hosts: all
