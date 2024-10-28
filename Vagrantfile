@@ -12,6 +12,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
+  
+  #VM - box used
   config.vm.box = "ubuntu/focal64"
 
   # Disable automatic box update checking. If you disable this, then
@@ -67,7 +69,8 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  # Provisioning configuration for Ansible.
+
+  # Provisioning configuration for Ansible using the playbook file
 config.vm.provision "ansible" do |ansible|
   ansible.playbook = "playbook.yml"
 config.vm.network "forwarded_port", guest: 3000, host: 3000  
