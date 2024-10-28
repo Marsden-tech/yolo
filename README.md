@@ -4,7 +4,9 @@ This project involved the containerization of a full-stack yolo application usin
 
 # Requirements
 Install the docker engine here:
-- [Docker](https://docs.docker.com/engine/install/) 
+- [Docker](https://docs.docker.com/engine/install/)
+
+Install VirtualBox and vagrant
 
 ## Images on Dockerhub
 ![alt text](image-1.png)
@@ -21,3 +23,8 @@ or
 
 docker compose build
 docker compose up
+
+## How to run a virtualized yolo application
+
+Ensure your at the root of the project directory
+Run Vagrant up --provision command to spin up virtual machine on your sytstem
