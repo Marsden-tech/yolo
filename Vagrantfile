@@ -72,7 +72,7 @@ Vagrant.configure("2") do |config|
 
   # Provisioning configuration for Ansible using the playbook file
 config.vm.provision "ansible" do |ansible|
-  ansible.playbook = "playbook.yml"
+  ansible.playbook = "playbook.yaml"
 config.vm.network "forwarded_port", guest: 3000, host: 3000  
   end
 end

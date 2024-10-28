@@ -1,0 +1,17 @@
+#Adds frontend deployment role
+---
+- name: Pull image from repository
+  docker_image:
+    name: lweroh/lweroh-yolo-client:v1.0.0
+    source: pull
+
+- name: Create Node.js Client Container
+  docker_container:
+    name: brian-yolo-backend
+    image: lweroh/lweroh-yolo-client:v1.0.0
+    networks:
+      - name: app-net
+    ports:
+      - "3000:3000"
+    command: "npm start"
+  become: yes
