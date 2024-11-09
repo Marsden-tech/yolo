@@ -6,11 +6,11 @@
 
 - name: Create Node.js Backend Container
   docker_container:
-    name: brian-yolo-backend
+    name: lweroh-yolo-backend
     image: lweroh/lweroh-yolo-backend:v1.0.0
     networks:
       - name: app-net
     ports:
       - "5000:5000"
     command: "npm start"
-  become: yes
+    become: yes
