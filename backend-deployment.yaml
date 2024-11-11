@@ -16,17 +16,9 @@ spec:
     spec:
       containers:
         - name: backend
-          image: lweroh/lweroh-yolo-backend:v1.0.0
-          command: ["npm", "start"] 
+          image: lweroh/lweroh-yolo-backend:v1.0.0 
           ports:
             - containerPort: 5000
-          resources:
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
-            requests:
-              memory: "128Mi"
-              cpu: "250m"
 ---
 apiVersion: v1
 kind: Service
