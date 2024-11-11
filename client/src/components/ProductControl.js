@@ -157,7 +157,7 @@ class ProductControl extends Component {
         //     console.log(pair[0]+ ', ' + pair[1]); 
         // }       
         // console.log(...formData)
-        axios.post('http://localhost:5000/api/products', newProduct)
+        axios.post('http://34.132.225.220:5000/api/products', newProduct)
             .then(res => console.log(res.data))
         this.setState({
             formVisibleOnPage: false
