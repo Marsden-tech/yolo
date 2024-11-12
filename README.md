@@ -28,3 +28,8 @@ docker compose up
 
 Ensure your at the root of the project directory
 Run Vagrant up --provision command to spin up virtual machine on your sytstem
+
+## External link for the deployed containers and services on google kubernetes engine 
+
+frontend service link http://34.122.137.15:3000/
+backend service link http://146.148.75.212:5000/
